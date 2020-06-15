@@ -19,6 +19,16 @@ ul {
     padding: 0;
 }
 
+.button_1 {
+    height: 38px;
+    background: #44DCA0;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-family: "Avenir Next" !important;
+}
+
 /* Header */
 header {
     background: #6b7480;
@@ -57,4 +67,45 @@ header nav {
 header a:hover {
     color: #f0f3f7;
     font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase {
+    min-height: 400px;
+    background: #ffffff;
+    text-align: center;
+    color: #6b7480;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 15px;
+}
+
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #6b7480;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    font-family: "Avenir Next" !important;
 }
