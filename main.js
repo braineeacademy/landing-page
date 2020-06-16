@@ -1,4 +1,3 @@
-// var firebase = require('firebase');
 var firebaseConfig = {
         apiKey: "AIzaSyDvjTy2c1WASU6C00mSndF15nXuAzfmD9E",
         authDomain: "brainee-leads.firebaseapp.com",
