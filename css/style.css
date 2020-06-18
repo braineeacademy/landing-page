@@ -103,6 +103,11 @@ header a:hover {
     margin-top: 15px;
 }
 
+#gSignIn {
+    float: right;
+    margin-top: 15px;
+}
+
 #newsletter input[type="email"] {
     padding: 4px;
     height: 25px;
@@ -146,4 +151,43 @@ footer {
 .userContent img {
     max-width: 100%;
     margin-bottom: 5px;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #gSignIn {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
