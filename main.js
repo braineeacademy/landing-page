@@ -10,6 +10,7 @@ var firebaseConfig = {
       };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+var analytics = firebase.analytics();
 var leadsRef = firebase.database().ref('leads');
 
 // Listen for form submit
@@ -17,6 +18,7 @@ document.getElementById('newsletterForm').addEventListener('submit', submitForm)
 
 function submitForm(event) {
     event.preventDefault();
+    firebase.analytics().logEvent('button_clicked');
 
     var email = getInputVal('email');
     saveEmail(email);
