@@ -68,24 +68,11 @@ ul {
 
 /* Header */
 header {
-    background: #6b7480;
-    color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #44DCA0 3px solid;
-}
 
-header a {
+    background: #4AEDBB;
     color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-} 
-
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
 }
 
 header #branding {
@@ -94,30 +81,23 @@ header #branding {
 
 header #branding h1 {
     margin: 0;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header a:hover {
-    color: #f0f3f7;
-    font-weight: bold;
+    color: black;
 }
 
 /* Showcase */
 #showcase {
     min-height: 400px;
-    background: #ffffff;
     text-align: center;
-    color: #6b7480;
+    
+    color: black;
+    background: #4AEDBB;
 }
 
 #showcase h1 {
     margin-top: 100px;
-    font-size: 45px;
     margin-bottom: 10px;
+
+    font-size: 24px;
 }
 
 #showcase p {
