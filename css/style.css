@@ -9,7 +9,7 @@ body {
 
 /* Global */
 .container {
-    width: 80%;
+    width: 85%;
     margin: auto;
     overflow: hidden;
 }
@@ -32,7 +32,6 @@ ul {
     padding-right: 20px;
 
     border: 1px solid black;
-    background: #999EFF;
     border-radius: 2px;
     transition: 0.3s;
 
@@ -106,6 +105,10 @@ header #branding h1 {
     text-align: left;
 }
 
+#showcase button {
+    background: #999EFF;
+}
+
 /* Newsletter */
 #newsletter {
     padding: 15px;
@@ -149,6 +152,10 @@ header #branding h1 {
 
 #boxes h1 {
     text-align: center;
+}
+
+#boxes button {
+    background: #4AEDBB;
 }
 
 /* Footer */
@@ -239,6 +246,14 @@ footer {
     /* Boxes */
     #boxes .box {
         padding: 0px;
+    }
+
+    #boxes p {
+        font-size: 11px;
+    }
+    
+    #boxes h1 {
+        font-size: 18px;
     }
 
     #newsletter form input[type="email"] {
