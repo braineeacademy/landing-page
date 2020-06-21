@@ -24,7 +24,6 @@ ul {
     left: 0;
     top: 0;
     
-    
     width: 300px;
     height: 38px;
     z-index: 1;
@@ -60,6 +59,7 @@ ul {
     
     width: 300px;
     height: 38px;
+    margin-top: 16px;
 }
 
 .button_1:active {
@@ -82,6 +82,7 @@ header #branding {
 header #branding h1 {
     margin: 0;
     color: black;
+    font-size: 25px;
 }
 
 /* Showcase */
@@ -96,12 +97,13 @@ header #branding h1 {
 #showcase h1 {
     margin-top: 100px;
     margin-bottom: 10px;
+    text-align: left;
 
-    font-size: 24px;
+    font-size: 30px;
 }
 
 #showcase p {
-    font-size: 15px;
+    text-align: left;
 }
 
 /* Newsletter */
@@ -135,6 +137,7 @@ header #branding h1 {
 /* Boxes */
 #boxes {
     margin-top: 20px;
+    text-align: center;
 }
 
 #boxes .box {
@@ -144,6 +147,11 @@ header #branding h1 {
     padding: 10px;
 }
 
+#boxes h1 {
+    text-align: center;
+}
+
+/* Footer */
 footer {
     padding: 20px;
     margin-top: 20px;
@@ -173,7 +181,7 @@ footer {
 /* Media Queries */
 
 @media(max-width: 768px) {
-    header #branding,
+    /* Global */
     header nav,
     header li,
     #newsletter h1,
@@ -199,20 +207,38 @@ footer {
     .button_container {
         float: none;
         text-align: center;
-        width: 96%;
+        width: calc(100% - 6px);;
+        left: 3px;
     }
 
+    /* Header */
     header {
         padding-bottom: 20px;
     }
 
-    #showcase h1 {
-        margin-top: 40px;
+    header #branding h1 {
+        font-size: 15px;
     }
 
+    /* Showcase */
+    #showcase h1 {
+        margin-top: 40px;
+        font-size: 24px;
+    }
+    
+    #showcase p {
+        font-size: 12px;
+    }
+
+    /* Newsletter */
     #newsletter button {
         display: block;
         width: 100%;
+    }
+
+    /* Boxes */
+    #boxes .box {
+        padding: 0px;
     }
 
     #newsletter form input[type="email"] {

@@ -58,7 +58,6 @@
         }
 
         function saveUserData(userData){
-            // $.post('userData.php', { oauth_provider:'google', userData: JSON.stringify(userData) });
             var newLeadsRef = leadsRef.push();
             newLeadsRef.set({
                 email: JSON.stringify(userData)
@@ -86,7 +85,7 @@
     <section id="showcase">
         <div class="container">
             <h1>Ansiedade para aprender um conhecimento novo?</h1>
-            <p>Siga um passo a passo elaborado por referências no assunto sem precisar pagar nada por isso. Tenha confiança para sair do zero e se tornar um especialista.</p>
+            <p>Siga um passo a passo elaborado por referências no assunto sem precisar pagar nada por isso. Tenha confiança para sair do <b>zero</b> e se tornar um <b>especialista</b>.</p>
            <div class="button_container">
                 <button type="button" class="button_1">Subscribe</button>
                 <div class="button_support"></div>
@@ -94,40 +93,48 @@
         </div>
     </section>
 
-    <section id="newsletter">
+    <!-- <section id="newsletter">
         <div class="container">
             <h1>Subscribe to our Newsletter</h1>
-            <!-- TODO make action works -->
             <form action="" id="newsletterForm">
                 <input type="email" placeholder="Enter Email..." id="email">
                 <div class="button_container">
                     <button type="submit" class="button_1">Subscribe</button>
                     <div class="button_support"></div>
                 </div>
-                <!-- <button type="submit" class="button_1">Subscribe</button> -->
             </form>
             <div id="gSignIn"></div>
         </div>
-    </section>
+    </section> -->
 
     <section id="boxes">
         <div class="container">
+            <h1>Mestres te guiarão pelas jornadas do conhecimento</h1>
             <div class="box">
-                <h3>HTML5 Markup</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis scelerisque lectus sed imperdiet.</p>
+                <h3>Nubank</h3>
+                <p>E se uma <b>UX Designer Sênior</b> do <b>Nubank</b> te guiasse por toda a jornada de desenvolvimento de produtos, você se sentiria mais confiante?</p>
             </div>
 
             <div class="box">
-                <h3>CSS3 Stylingp</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis scelerisque lectus sed imperdiet.</p>
-                
-                <div class="userContent" style="display: none;"></div>
+                <h3>Google</h3>
+                <p>E se um <b>Desenvolvedor Sênior</b> do <b>Google</b> te mostrasse o caminho para ser <b>#FOD@</b> em Front-End, você se sentiria mais confiante?</p>
             </div>
 
             <div class="box">
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis scelerisque lectus sed imperdiet.</p>
+                <h3>RD</h3>
+                <p>E se um <b>Analista de Marketing Sênior</b> da <b>RD</b> te mostrar o passo a passo para <b>VOCÊ alcançar sua senioridade</b>, você se sentiria mais confiante?</p>            
             </div>
+            <div class="button_container">
+                <button type="button" class="button_1">Subscribe</button>
+                <div class="button_support"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="google">
+        <div class="container">
+            <div id="gSignIn"></div>
+            <div class="userContent" style="display: none;"></div>
         </div>
     </section>
 
