@@ -232,10 +232,13 @@ footer {
         margin-top: 40px;
     }
 
+    #form .button_container {
+        left: 0px;
+    }
+    
     /* Newsletter */
-    #newsletter button {
-        display: block;
-        width: 100%;
+    #form #newsletterForm, #form .google_container {
+        text-align: center;
     }
 
     #newsletterForm input {
