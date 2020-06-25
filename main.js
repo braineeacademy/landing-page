@@ -11,7 +11,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var analytics = firebase.analytics();
-var leadsRef = firebase.database().ref('leads');
+var leadsRef = firebase.database().ref('leads-email');
 
 // Listen for form submit
 document.getElementById('newsletterForm').addEventListener('submit', submitForm);
@@ -21,7 +21,8 @@ function submitForm(event) {
     firebase.analytics().logEvent('button_clicked');
 
     var email = getInputVal('email');
-    saveEmail(email);
+    var name = getInputVal('name');
+    saveEmail(email, name);
 }
 
 function getInputVal(id) {
@@ -29,9 +30,10 @@ function getInputVal(id) {
 }
 
 // Send email to firebase
-function saveEmail(email) {
+function saveEmail(email, name) {
     var newLeadsRef = leadsRef.push();
     newLeadsRef.set({
-        email: email
+        email: email,
+        name: name
     });
 }
