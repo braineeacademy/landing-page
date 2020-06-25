@@ -115,20 +115,15 @@ header #branding p {
     color: white;
 }
 
-#gSignIn {
-    float: right;
-    margin-top: 15px;
-}
-
 #form input {
-    padding: 0 0 0 0;
+    display: block;
+
     height: 38px;
     width: 250px;
     border: 1px solid white;
 
     background-color: #0096ff;
     font-family: 'Montserrat Alternates', sans-serif;
-
 }
 
 /* Boxes */
@@ -202,8 +197,7 @@ footer {
     #newsletter h1,
     #newsletter form,
     #boxes .box,
-    #phone img,
-    #form input {
+    #phone img {
         float: none;
         text-align: center;
         width: 100%;
@@ -244,19 +238,14 @@ footer {
         width: 100%;
     }
 
+    #newsletterForm input {
+        margin: 0 auto;
+        text-align: left;
+        width: 98%;
+    }
+
     /* Boxes */
     #boxes .box {
         padding: 0px;
-    }
-
-    #newsletter form input[type="email"] {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
-    #gSignIn {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 20px;
     }
 }
