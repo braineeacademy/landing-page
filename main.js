@@ -37,3 +37,8 @@ function saveEmail(email, name) {
         name: name
     });
 }
+
+function goToForm() {
+    var elmnt = document.getElementById("form");
+    elmnt.scrollIntoView();
+  }

@@ -7,6 +7,10 @@ body {
 }
 
 /* Global */
+html {
+    scroll-behavior: smooth;
+  }
+
 .container {
     width: 85%;
     margin: auto;
