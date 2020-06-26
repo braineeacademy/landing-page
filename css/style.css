@@ -100,7 +100,6 @@ header #branding p {
 
 /* Showcase */
 #showcase {
-    min-height: 400px;
     text-align: center;
     
     color: black;
@@ -119,6 +118,10 @@ header #branding p {
 
 #showcase button {
     background: #999EFF;
+}
+
+#showcase .button_container {
+    margin-bottom: 32px;
 }
 
 /* Form */
