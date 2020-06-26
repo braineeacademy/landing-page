@@ -72,6 +72,7 @@ ul {
 header {
     padding-top: 30px;
     min-height: 70px;
+    border-bottom:#4AEDBB 2px solid;
 
     background: #4AEDBB;
     color: #ffffff;
