@@ -146,6 +146,33 @@ header #branding p {
     font-size: 12px;
 }
 
+.kw-dvp-HorizonalButton {
+    color: white;
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+}
+.kw-dvp-HorizonalButton:before, .kw-dvp-HorizonalButton:after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    float:left;
+    height:1px;
+}
+.kw-dvp-HorizonalButton:before {
+    order:1;
+    flex-grow:1;
+    margin-right:8px;
+}
+.kw-dvp-HorizonalButton:after {
+    order: 3;
+    flex-grow: 1;
+    margin-left: 8px;
+}
+.kw-dvp-HorizonalButton * {
+    order: 2;
+}
+
 /* Boxes */
 #boxes {
     margin-top: 20px;
