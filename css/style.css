@@ -129,12 +129,18 @@ header #branding p {
 #form input {
     display: block;
 
-    height: 38px;
-    width: 250px;
+    height: 45px;
+    width: 300px;
     border: 1px solid white;
 
     background-color: #0096ff;
     font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#newsletterForm label {
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 /* Boxes */
@@ -252,13 +258,12 @@ footer {
     }
 
     /* Newsletter */
-    #form #newsletterForm, #form .google_container {
+    #form #newsletterForm input, #form .google_container {
         text-align: center;
     }
 
     #newsletterForm input {
-        margin: 0 auto;
-        text-align: left;
+        padding: 0;
         width: 98%;
     }
 
