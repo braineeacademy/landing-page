@@ -49,6 +49,21 @@ function saveGoogleData(data) {
     });
 }
 
+function goToFormAnxiety1() {
+    firebase.analytics().logEvent('clicked_anxiety_1');
+    goToForm();
+}
+
+function goToFormAnxiety2() {
+    firebase.analytics().logEvent('clicked_anxiety_2');
+    goToForm();
+}
+
+function goToFormLearn() {
+    firebase.analytics().logEvent('clicked_learn');
+    goToForm();
+}
+
 function goToForm() {
     var elmnt = document.getElementById("form");
     elmnt.scrollIntoView();
