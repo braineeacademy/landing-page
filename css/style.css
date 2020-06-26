@@ -151,6 +151,7 @@ header #branding p {
     display:flex;
     flex-wrap:nowrap;
     align-items:center;
+    margin-top: 32px;
 }
 .kw-dvp-HorizonalButton:before, .kw-dvp-HorizonalButton:after {
     background-color: white;
