@@ -60,6 +60,7 @@ function attachSignin(element) {
         function(googleUser) {
             saveGoogleData(googleUser);
         }, function(error) {
+            firebase.analytics().logEvent('error_google');
             alert(JSON.stringify(error, undefined, 2));
         }
     );
