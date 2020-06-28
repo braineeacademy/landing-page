@@ -24,10 +24,17 @@ ul {
 
 #boxes {
     background-image: url('../img/teacher.png');
-    background-position: right 150px;
+    background-position: right 180px;
     background-repeat: no-repeat;
-    background-size: 150px;
-  }
+    background-size: 144px;
+}
+
+#arms {
+    background-image: url('../img/right-arm.png');
+    background-position: right 0px;
+    background-repeat: no-repeat;
+    background-size: 60px;
+}
 
 .button_1 {
     position: absolute;
