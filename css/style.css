@@ -252,6 +252,14 @@ footer {
     background-color: #ffffff;
 }
 
+/* Footer */
+
+footer {
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
 /* Media Queries */
 
 @media(max-width: 768px) {
