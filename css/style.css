@@ -136,6 +136,7 @@ header #branding p {
     width: 300px;
     border: 1px solid white;
     color: white;
+    border-radius: 0;
 
     background-color: #0096ff;
     font-family: 'Montserrat Alternates', sans-serif;
