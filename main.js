@@ -74,9 +74,10 @@ function attachSignin(element) {
     auth2.attachClickHandler(element, {},
         function(googleUser) {
             saveGoogleData(googleUser);
+            alert('Dados enviados com sucesso!');
         }, function(error) {
             firebase.analytics().logEvent('error_google');
-            alert(JSON.stringify(error, undefined, 2));
+            alert('Não foi possível enviar os dados. Tente novamente.');
         }
     );
 }
