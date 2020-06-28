@@ -12,9 +12,25 @@ html {
   }
 
 .container {
-    width: 85%;
+    width: 100vw;
     margin: auto;
     overflow: hidden;
+    padding-right: 7.5vw;
+    padding-left: 7.5vw;
+    box-sizing: border-box;  
+}
+
+.container__MoreConfidence{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.container__MoreConfidence b{
+    background-color: #4aedbb;
+    border-radius:4px;
+    
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 ul {
@@ -30,8 +46,9 @@ ul {
 }
 
 #arms {
-    background-image: url('../img/right-arm.png');
-    background-position: right 0px;
+    background-image: url('../img/left-arm.png'), url('../img/right-arm.png');
+    background-position: top 50%;
+    background-position: left center, right center;
     background-repeat: no-repeat;
     background-size: 60px;
 }
