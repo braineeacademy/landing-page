@@ -40,7 +40,7 @@ ul {
 
 #boxes {
     background-image: url('../img/teacher.png');
-    background-position: right 180px;
+    background-position: right 260px;
     background-repeat: no-repeat;
     background-size: 144px;
 }
@@ -210,7 +210,6 @@ header #branding p {
 
 /* Boxes */
 #boxes {
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -252,6 +251,14 @@ footer {
     background-color: #ffffff;
 }
 
+/* Footer */
+
+footer {
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
 /* Media Queries */
 
 @media(max-width: 768px) {
@@ -286,14 +293,13 @@ footer {
         left: 3px;
     }
 
-    /* Header */
-    header {
-        padding-bottom: 20px;
-    }
-
     /* Showcase */
     #showcase h1 {
         margin-top: 40px;
+    }
+
+    #showcase .button_container {
+        margin-bottom: 0px;
     }
 
     /* Newsletter Form */
@@ -321,5 +327,12 @@ footer {
     /* Boxes */
     #boxes .box {
         padding: 0px;
+    }
+
+    #boxes {
+        background-image: url('../img/teacher.png'), url('../img/dobra_verde.svg');
+        background-position: right 260px, top;
+        background-repeat: no-repeat;
+        background-size: 144px, 100%;
     }
 }
