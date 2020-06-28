@@ -105,14 +105,15 @@
 
             <form action="" id="newsletterForm" style="margin-top: 32px; margin-bottom: 32px;">
                 <label for="name">Nome</label>
-                <input type="text" id="name" style="margin-bottom: 8px; text-align: left;">
+                <input type="text" id="name" style="margin-bottom: 8px; text-align: left;" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" style="text-align: left;">
+                <input type="email" id="email" style="text-align: left;" required>
 
                 <div class="button_container" style="margin-left: 4px;">
                     <button type="submit" class="button_1" style="background-color: #4aedbb;">Enviar</button>
                     <div class="button_support"></div>
                 </div>
+                <div class="success" style="display: none;"></div>
             </form>
         </div>
     </section>

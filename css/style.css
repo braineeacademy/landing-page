@@ -159,7 +159,7 @@ header #branding p {
     background-color: white;
     content: "";
     display: inline-block;
-    float:left;
+    float: left;
     height:1px;
 }
 .kw-dvp-HorizonalButton:before {

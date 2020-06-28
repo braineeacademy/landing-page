@@ -24,6 +24,7 @@ function submitForm(event) {
     var email = getInputVal('email');
     var name = getInputVal('name');
     saveForm(email, name);
+    showSuccess()
 }
 
 function getInputVal(id) {
@@ -77,7 +78,7 @@ function attachSignin(element) {
             alert('Dados enviados com sucesso!');
         }, function(error) {
             firebase.analytics().logEvent('error_google');
-            alert('Não foi possível enviar os dados. Tente novamente.');
+            alert(JSON.stringify(error, undefined, 2));
         }
     );
 }
@@ -92,4 +93,13 @@ var startApp = function() {
         attachSignin(document.getElementById('customGoogleBtn'));
     });
 };
+
+function showSuccess(){
+    var message = '<p style="font-size: 14px; font-weight: bold; color: #4aedbb; margin: 0;">Registro enviado com sucesso!</p>'
+    document.getElementsByClassName("success")[0].innerHTML = message;
+    document.getElementsByClassName("success")[0].style.display = "block";
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+}
+
 startApp();
