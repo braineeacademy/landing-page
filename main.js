@@ -88,11 +88,9 @@ var startApp = function() {
     gapi.load('auth2', function(){
         auth2 = gapi.auth2.init({
             client_id: '306712348441-hj1r4iti9ck24bduhuiekcnjg1tmc16r.apps.googleusercontent.com',
-            cookiepolicy: 'single_host_origin',
-            ux_mode: 'redirect',
-            redirect_uri: 'https://brainee.academy/'
+            cookiepolicy: 'single_host_origin'
         });
-        attachSignin(document.getElementById('customGoogleBtn'));
+        // attachSignin(document.getElementById('customGoogleBtn'));
     });
 };
 
